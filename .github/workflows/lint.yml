@@ -1,7 +1,7 @@
 name: Verify Lint
 on: pull_request
 jobs:
-  litn:
+  lint:
     runs-on: ubuntu-latest
     strategy:
       matrix:
