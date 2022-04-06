@@ -16,7 +16,7 @@ defmodule PipelineCiWeb.ChannelCase do
   """
 
   use ExUnit.CaseTemplate
-  alias  Ecto.Adapters.SQL.Sandbox
+  alias Ecto.Adapters.SQL.Sandbox
 
   using do
     quote do
