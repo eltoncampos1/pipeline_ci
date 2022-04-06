@@ -30,8 +30,8 @@ defmodule PipelineCiWeb.ChannelCase do
   end
 
   setup tags do
-    pid = start_owner!(PipelineCi.Repo, shared: not tags[:async])
-    on_exit(fn -> stop_owner(pid) end)
+    pid = Sandbox.start_owner!(PipelineCi.Repo, shared: not tags[:async])
+    on_exit(fn -> Sandbox.stop_owner(pid) end)
     :ok
   end
 end

@@ -5,7 +5,7 @@ config :pipeline_ci, PipelineCi.Repo,
   username: "postgres",
   password: "postgres",
   hostname: "localhost",
-  database: "pipeline_ci_dev",
+  database: "db_dev",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
