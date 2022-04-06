@@ -25,13 +25,12 @@ jobs:
           mix local.hex  --force
           mix deps.get
           mix ecto.create
-        run: mix deps.get
       - name: ===> Verify coverage and tests
         run: mix coveralls.html
     services:
       pg:
         image: postgres:12
-        ports: ['5432:5432'].
+        ports: ['5432:5432']
         env:
           POSTGRES_PASSWORD: postgres
         options: >-
